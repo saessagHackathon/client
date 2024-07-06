@@ -19,8 +19,6 @@ export const getSpeech = (text: string) => {
 
     const korVoice = voices.find((elem) => elem.voiceURI === 'Google 한국의')
 
-    console.log(korVoice)
-
     if (korVoice) {
       utterThis.voice = korVoice
     } else {
