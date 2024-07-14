@@ -2,7 +2,7 @@ import { cva, VariantProps } from 'class-variance-authority'
 import { PropsWithChildren } from 'react'
 
 const chatVariants = cva(
-  'text-15 px-30 py-15 max-w-[250px] rounded-20 w-fit text-white',
+  'text-15 px-30 py-15 max-w-[250px] rounded-20 w-fit text-white animate-appearBottom',
   {
     variants: {
       type: {

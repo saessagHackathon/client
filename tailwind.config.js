@@ -7,6 +7,8 @@ export default {
     extend: {
       colors: {
         primary: '#FF5757',
+        'red-200': 'rgba(255, 121, 121, 1)',
+        'red-300': 'rgba(255, 154, 154, 1)',
         'gray-100': 'rgba(124, 124, 124, 1)',
       },
       width: px0to300,
@@ -25,14 +27,43 @@ export default {
       },
     },
     keyframes: {
+      appearBottom: {
+        '0%': { transform: 'translateY(50%)', opacity: 0 },
+        '50%': { transform: 'translateY(-20%)', opacity: 1 },
+        '100%': { transform: 'translateY(0)', opacity: 1 },
+      },
       spread: {
-        '0%': { transform: 'scale(0)', opacity: 0.5 },
-        '90%': { transform: 'scale(1)', opacity: 1 },
-        '100%': { transform: 'scale(1)', opacity: 0 },
+        '0%': {
+          transform: 'scale(0)',
+          opacity: 0.5,
+        },
+        '70%': { transform: 'scale(1)', opacity: 1 },
+        '100%': { transform: 'scale(0.7)', opacity: 0 },
+      },
+      grow: {
+        '0%': {
+          transform: 'scale(0.5)',
+          backgroundColor: 'rgba(255, 154, 154, 1)',
+        },
+        '30%': { transform: 'scale(1)', backgroundColor: '#FF5757' },
+        '60%': {
+          transform: 'scale(0.5)',
+          backgroundColor: 'rgba(255, 154, 154, 1)',
+        },
+        '100%': {
+          transform: 'scale(0.5)',
+          backgroundColor: 'rgba(255, 154, 154, 1)',
+        },
       },
     },
     animation: {
       spread: 'spread 2s ease-in-out infinite',
+      appearBottom: 'appearBottom 0.5s ease-in-out',
+      grow1: 'grow 2s ease-in-out infinite',
+      grow2: 'grow 2s ease-in-out infinite 0.3s',
+      grow3: 'grow 2s ease-in-out infinite 0.6s',
+      grow4: 'grow 2s ease-in-out infinite 0.9s',
+      grow5: 'grow 2s ease-in-out infinite 1.2s',
     },
   },
   plugins: [],
