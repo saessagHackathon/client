@@ -15,7 +15,7 @@ const meta = {
       description: '마이크 크기',
     },
   },
-  parameters: ['autodocs'],
+  tags: ['autodocs'],
 } satisfies Meta<typeof Microphone>
 
 export default meta

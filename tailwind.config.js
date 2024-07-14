@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         primary: '#FF5757',
+        'gray-100': 'rgba(124, 124, 124, 1)',
       },
       width: px0to300,
       height: px0to300,
@@ -14,6 +15,7 @@ export default {
       padding: px0to300,
       borderRadius: {
         32: '32px',
+        20: '20px',
         12: '12px',
         8: '8px',
         4: '4px',
@@ -21,6 +23,16 @@ export default {
       boxShadow: {
         sm: '0px 0px 4px rgba(0, 0, 0, 0.25)',
       },
+    },
+    keyframes: {
+      spread: {
+        '0%': { transform: 'scale(0)', opacity: 0.5 },
+        '90%': { transform: 'scale(1)', opacity: 1 },
+        '100%': { transform: 'scale(1)', opacity: 0 },
+      },
+    },
+    animation: {
+      spread: 'spread 2s ease-in-out infinite',
     },
   },
   plugins: [],
