@@ -10,9 +10,11 @@ export default {
         'red-200': 'rgba(255, 121, 121, 1)',
         'red-300': 'rgba(255, 154, 154, 1)',
         'gray-100': 'rgba(124, 124, 124, 1)',
+        bubble: 'rgba(246, 246, 246, 1)',
       },
       width: px0to300,
       height: px0to300,
+      gap: px0to300,
       fontSize: px0to300,
       padding: px0to300,
       borderRadius: {
@@ -24,6 +26,7 @@ export default {
       },
       boxShadow: {
         sm: '0px 0px 4px rgba(0, 0, 0, 0.25)',
+        md: '0px 0px 4px 2px rgba(0, 0, 0, 0.25)',
       },
     },
     keyframes: {

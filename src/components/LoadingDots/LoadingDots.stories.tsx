@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { LoadingDots } from './LoadingDots'
 
 const meta = {
-  title: 'LoadingDots',
+  title: 'Component/LoadingDots',
   component: LoadingDots,
   args: {
     size: 'lg',

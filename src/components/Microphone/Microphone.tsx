@@ -1,7 +1,7 @@
 import { cva, VariantProps } from 'class-variance-authority'
 
 const microphoneVariants = cva(
-  'flex items-center justify-center rounded-full bg-primary shadow-sm',
+  'flex items-center justify-center rounded-full bg-primary shadow-sm z-[300]',
   {
     variants: {
       size: {

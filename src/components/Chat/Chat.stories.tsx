@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Chat } from './Chat'
 
 const meta = {
-  title: 'Chat',
+  title: 'Component/Chat',
   component: Chat,
   args: {
     children: '채팅 내용',

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Microphone } from './Microphone'
 
 const meta = {
-  title: 'Microphone',
+  title: 'Component/Microphone',
   component: Microphone,
   args: {
     size: 'lg',
