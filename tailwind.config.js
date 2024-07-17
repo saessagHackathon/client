@@ -35,6 +35,11 @@ export default {
         '50%': { transform: 'translateY(-20%)', opacity: 1 },
         '100%': { transform: 'translateY(0)', opacity: 1 },
       },
+      appearBottomSm: {
+        '0%': { transform: 'translateY(20%)', opacity: 0 },
+        '50%': { transform: 'translateY(-5%)', opacity: 1 },
+        '100%': { transform: 'translateY(0)', opacity: 1 },
+      },
       spread: {
         '0%': {
           transform: 'scale(0)',
@@ -61,7 +66,8 @@ export default {
     },
     animation: {
       spread: 'spread 2s ease-in-out infinite',
-      appearBottom: 'appearBottom 0.5s ease-in-out',
+      appearBottom: 'appearBottom 0.5s ease-in-out forwards',
+      appearBottomSm: 'appearBottomSm 0.5s ease-in-out forwards',
       grow1: 'grow 2s ease-in-out infinite',
       grow2: 'grow 2s ease-in-out infinite 0.3s',
       grow3: 'grow 2s ease-in-out infinite 0.6s',

@@ -20,7 +20,7 @@ const Logo = () => (
 export const MainPage = () => {
   return (
     <div className="flex h-full flex-col justify-between">
-      <div className="align-center flex h-full w-full flex-col items-center justify-center gap-4">
+      <div className="animate-appearBottomSm align-center flex h-full w-full flex-col items-center justify-center gap-4">
         <p className="text-40 font-black text-primary">주문 도우미</p>
         <Logo />
       </div>

@@ -6,6 +6,7 @@ import { Layout } from '@components/Layout/Layout'
 import { MainPage } from '@pages/MainPage'
 import { StorePage } from '@pages/StorePage'
 import { MenuPage } from '@pages/MenuPage'
+import { ChatPage } from '@pages/ChatPage'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/order/:storeId/menu',
         element: <MenuPage />,
+      },
+      {
+        path: '/chat',
+        element: <ChatPage />,
       },
     ],
   },
